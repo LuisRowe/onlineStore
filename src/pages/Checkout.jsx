@@ -79,7 +79,7 @@ class Checkout extends Component {
                       <p data-testid="shopping-cart-product-quantity">
                         { orderQuantity }
                       </p>
-                      {`R$ ${price}`}
+                      {`R$ ${price.toFixed(2)}`}
                     </div>
                   </div>
                   <hr />

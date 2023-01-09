@@ -33,7 +33,7 @@ class ProductCard extends React.Component {
             </p>
             <div className="row" style={ { height: '48px' } }>
               <div className="col-7">
-                {`R$${price}`}
+                {`R$ ${price.toFixed(2).replace('.', ',')}`}
               </div>
               <div className="col-5">
                 {isFreeShipping

@@ -121,7 +121,7 @@ class ProductDetails extends React.Component {
                 className="fs-5 mb-3"
                 data-testid="product-detail-price"
               >
-                {`R$ ${productPrice}`}
+                {(productPrice) && `R$ ${productPrice.toFixed(2)}`.replace('.', ',')}
               </span>
               <ButtonIconText
                 classStyle="success"

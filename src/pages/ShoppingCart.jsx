@@ -63,7 +63,7 @@ class ShoppingCart extends Component {
                     >
                       {title}
                     </div>
-                    <div className="row my-3">{`R$ ${price}`}</div>
+                    <div className="row my-3">{`R$ ${price.toFixed(2).replace('.', ',')}`}</div>
                     <div className="row align-items-center justify-content-center">
                       <button
                         type="button"
